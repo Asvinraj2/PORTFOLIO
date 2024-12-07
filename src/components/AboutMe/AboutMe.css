@@ -1,0 +1,193 @@
+/* Default styles for larger screens */
+.about {
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    align-items: center;
+    padding: 4rem 10%;
+}
+
+.about-img {
+    /* margin-top: 100px; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    position: relative;
+    margin-bottom: 2rem; /* Reduced bottom margin */
+}
+
+.about-img img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    border: 8px solid rgb(5, 21, 45);
+    box-shadow: 0 10px 30px rgb(0, 0, 0); /* Soft shadow around the image */
+    object-fit: cover;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.about-img img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 5px 30px rgb(255, 255, 255); /* Shadow effect on hover */
+}
+
+.about-text h2 {
+    font-size: 60px;
+    font-weight: 700;
+    color: #fff;
+    margin-bottom: 10px;
+    position: relative;
+}
+
+.about-text h2 span {
+    color: #0ef;
+}
+
+.about-text h4 {
+    font-size: 29px;
+    font-weight: 600;
+    color: #fff;
+    line-height: 1.7;
+    margin: 15px 0 30px;
+}
+
+.about-text p {
+    color: aliceblue;
+    font-size: 20px;
+    line-height: 1.4;
+    margin-bottom: 2rem;
+    text-align: justify;
+}
+
+.about-text a {
+    font-size: 16px;
+    padding: 12px 28px;
+    background-color: #0ef;
+    color: #081b29;
+    text-decoration: none;
+    border-radius: 40px;
+    font-weight: 600;
+    display: inline-block;
+    margin-top: 30px;
+    box-shadow: 0 0 5px #0ef, 0 0 25px #0ef;
+    transition: all 0.3s ease;
+}
+
+.about-text a:hover {
+    background-color: #081b29;
+    color: #0ef;
+    box-shadow: 0 0 10px #0ef, 0 0 30px #0ef;
+}
+
+/* Media Queries for smaller devices */
+@media (max-width: 1024px) {
+    .about {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+        padding: 2rem 5%;
+    }
+
+    .about-img {
+        padding: 1.5rem;
+        margin-bottom: 1.5rem; /* Adjusted margin for smaller devices */
+    }
+
+    .about-img img {
+        width: 80%;
+        border-radius: 50%;
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1); /* Softer shadow on smaller screens */
+    }
+
+    .about-text h2 {
+        font-size: 45px;
+    }
+
+    .about-text h4 {
+        font-size: 26px;
+    }
+
+    .about-text p {
+        font-size: 18px;
+        margin-bottom: 3rem;
+    }
+
+    .about-text a {
+        font-size: 14px;
+        padding: 10px 24px;
+    }
+}
+@media (max-width: 768px) {
+    .about {
+        display: flex;
+        flex-direction: column-reverse; /* Reverses the order of text and image */
+        align-items: center; /* Centers content horizontally */
+        padding: 1.5rem 5%;
+    }
+
+    .about-text {
+        order: 1; /* Ensures text appears before the image */
+        text-align: center; /* Centers text for better readability */
+        margin-top: 1rem;
+    }
+
+    .about-img {
+        order: 2; /* Ensures image appears after text */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+
+    .about-img img {
+        width: 60%; /* Adjusts image size for smaller screens */
+        border-radius: 50%;
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15); /* Softer shadow */
+    }
+
+    .about-text h2 {
+        font-size: 36px; /* Scales down heading size */
+    }
+
+    .about-text h4 {
+        font-size: 22px;
+    }
+
+    .about-text p {
+        font-size: 15px; /* Slightly smaller font for clarity */
+        line-height: 1.6; /* Increased line height for better readability */
+        margin-bottom: 1.5rem; /* Adequate spacing below the paragraph */
+        padding: 0 10px; /* Adds horizontal padding for a clean look */
+        text-align: justify; /* Justifies text for a neat appearance */
+    }
+}
+
+@media (max-width: 480px) {
+    .about {
+        flex-direction: column-reverse; /* Ensures proper stacking for very small screens */
+        gap: 1rem; /* Adds spacing between text and image */
+    }
+
+    .about-img img {
+        width: 75%; /* Further reduces image size for very small screens */
+        border-radius: 50%;
+        border: 6px solid #0ef;
+    }
+
+    .about-text h2 {
+        font-size: 28px; /* Smaller font size for compact devices */
+    }
+
+    .about-text h4 {
+        font-size: 18px;
+    }
+
+    .about-text p {
+        font-size: 14px; /* Further adjustment for smaller screens */
+        line-height: 1.5;
+        margin-bottom: 1rem; /* Reduces margin for compact space */
+        padding: 0 5%; /* Adds proportional padding */
+        text-align: justify; /* Ensures professional alignment */
+    }
+}

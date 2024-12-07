@@ -1,0 +1,198 @@
+.contact {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    gap: 3rem;
+    padding: 50px 30px;
+    margin-top: 100px;
+}
+
+.contact-text h2 {
+    font-size: 60px;
+    line-height: 1.2;
+    text-align: left;
+}
+
+.contact-text h2 span {
+    color: #0ef;
+}
+
+.contact-text h4 {
+    margin: 15px 0;
+    color: rgb(228, 228, 228);
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.contact-text p {
+    color: rgb(77, 177, 177);
+    font-size: 18px;
+    line-height: 28px;
+    margin-bottom: 20px;
+    text-align: justify;
+}
+
+.contact-list {
+    margin-bottom: 20px;
+}
+
+.contact-list li {
+    margin-bottom: 10px;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+}
+
+.contact-list i {
+    margin-right: 10px;
+    color: #0ef;
+    font-size: 20px;
+    transition: all 0.4s ease;
+}
+
+.contact-icon a {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    background: transparent;
+    border: 2px solid #0ef;
+    border-radius: 50%;
+    font-size: 24px;
+    color: #0ef;
+    text-decoration: none;
+    margin: 0 10px;
+    transition: all 0.3s ease;
+    box-shadow: 0 0 5px #0ef, 0 0 15px #0ef;
+}
+
+.contact-icon a:hover {
+    background: #0ef;
+    color: #081b29;
+    box-shadow: 0 0 5px cyan, 0 0 15px cyan, 0 0 30px cyan, 0 0 50px cyan;
+    transform: translateY(-3px);
+}
+
+.contact-form form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.contact-form form input,
+.contact-form form textarea {
+    width: 100%;
+    padding: 15px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    background: #555557;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.contact-form textarea {
+    resize: none;
+    height: 150px;
+}
+
+.contact-form form .send {
+    display: inline-block;
+    width: 100%;
+    padding: 15px;
+    text-align: center;
+    background: #0ef;
+    border: none;
+    border-radius: 30px;
+    font-size: 18px;
+    font-weight: 600;
+    color: #081b29;
+    cursor: pointer;
+    box-shadow: 0 0 5px #0ef, 0 0 25px #0ef;
+    transition: all 0.3s ease;
+}
+
+.contact-form form .send:hover {
+    box-shadow: 0 0 5px cyan, 0 0 15px cyan, 
+    0 0 30px cyan, 0 0 50px cyan;
+    transform: translateY(-3px);
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    .contact {
+        margin-top: 50px;
+        grid-template-columns: 1fr; /* Stack the columns */
+        gap: 2rem;
+        padding: 30px 15px; /* Adjust padding for small screens */
+    }
+
+    .contact-text h2 {
+        font-size: 40px; /* Resize title for smaller screens */
+    }
+
+    .contact-text h4 {
+        font-size: 18px; /* Resize subheading */
+    }
+
+    .contact-text p {
+        font-size: 16px; /* Resize paragraph text */
+        text-align: justify;
+    }
+
+    .contact-list li {
+        font-size: 16px; /* Resize list items */
+    }
+
+    .contact-form form input,
+    .contact-form form textarea {
+        padding: 12px; /* Reduce padding in inputs/textarea */
+        font-size: 14px; /* Adjust font size */
+    }
+
+    .contact-form form .send {
+        font-size: 16px; /* Adjust button size */
+        padding: 12px;
+    }
+
+    .contact-icon a {
+        width: 40px;
+        height: 40px;
+        font-size: 20px; /* Resize social media icons */
+        margin: 0 5px; /* Adjust margin for smaller screens */
+    }
+}
+
+/* For smaller screens (mobile) */
+@media (max-width: 480px) {
+    .contact-text h2 {
+        font-size: 30px; /* Further reduce title size */
+    }
+
+    .contact-text h4 {
+        font-size: 16px; /* Smaller subheading */
+    }
+
+    .contact-text p {
+        font-size: 14px; /* Smaller paragraph text */
+        text-align: justify;
+    }
+
+    .contact-form form input,
+    .contact-form form textarea {
+        font-size: 14px; /* Ensure form text fits well */
+    }
+
+    .contact-form form .send {
+        font-size: 16px; /* Button adjustment */
+    }
+
+    .contact-icon a {
+        width: 35px;
+        height: 35px;
+        font-size: 18px; /* Adjust social icons */
+    }
+}

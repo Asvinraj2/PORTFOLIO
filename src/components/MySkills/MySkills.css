@@ -1,0 +1,443 @@
+/* * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    color: #fff;
+    background: #081b29;
+} */
+
+.sub-title {
+    text-align: center;
+    font-size: 60px;
+    padding: 30px 0 50px;
+}
+
+.sub-title span {
+    color: #0ef;
+}
+
+section {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.container1 {
+    width: 600px;
+    height: auto;
+    padding: 75px 90px;
+    margin: 0 auto;
+}
+
+.heading {
+    text-align: center;
+    text-decoration: underline;
+    text-underline-offset: 10px;
+    text-decoration-thickness: 5px;
+    margin-bottom: 60px;
+}
+
+.bar {
+    font-size: 23px;
+    margin-bottom: 40px;
+}
+
+.bar .info {
+    margin-bottom: 5px;
+}
+
+.bar .info span {
+    font-size: 17px;
+    font-weight: 500;
+    animation: showText 0.5s 1s linear forwards;
+}
+
+.bar .progress-line {
+    position: relative;
+    border-radius: 10px;
+    width: 100%;
+    height: 5px;
+    background-color: #000;
+    transform: scaleX(0);
+    transform-origin: left;
+    animation: animateBar 1s cubic-bezier(1, 0, 0.5, 1) forwards;
+}
+
+.bar .progress-line span {
+    height: 100%;
+    background-color: #0ef;
+    position: absolute;
+    border-radius: 10px;
+    transform: scaleX(0);
+    transform-origin: left;
+    animation: animateFill 1s 1s cubic-bezier(1, 0, 0.5, 1) forwards;
+}
+
+
+/* Progress values */
+.progress-line.html span {
+    width: 90%;
+}
+
+.progress-line.css span {
+    width: 60%;
+}
+
+.progress-line.javascript span {
+    width: 55%;
+}
+
+.progress-line.react span {
+    width: 50%;
+}
+
+.progress-line.java span {
+    width: 60%;
+}
+
+.progress-line.sql span {
+    width: 50%;
+}
+
+/* Text Bubble */
+.progress-line span::after {
+    position: absolute;
+    padding: 1px 8px;
+    background-color: #000;
+    color: #fff;
+    font-size: 12px;
+    border-radius: 3px;
+    top: -28px;
+    right: 0;
+    content: attr(data-label);
+    animation: showText 0.5s 1.5s linear forwards;
+    opacity: 0;
+}
+
+.progress-line.html span::after {
+    content: "90%";
+}
+
+.progress-line.css span::after {
+    content: "60%";
+}
+
+.progress-line.javascript span::after {
+    content: "55%";
+}
+
+.progress-line.react span::after {
+    content: "50%";
+}
+
+.progress-line.java span::after {
+    content: "60%";
+}
+
+.progress-line.sql span::after {
+    content: "50%";
+}
+
+@keyframes animateBar {
+    100% {
+        transform: scaleX(1);
+    }
+}
+
+@keyframes animateFill {
+    100% {
+        transform: scaleX(1);
+    }
+}
+
+@keyframes showText {
+    100% {
+        opacity: 1;
+    }
+}
+
+
+
+
+
+
+/* professional skills */
+
+
+.radial-bars{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: flex-start;
+}
+.radial-bars .radial-bar{
+    width: 50%;
+    height: 170px;
+    margin-bottom: 10px;
+    position: relative;
+    margin-bottom: 40px;
+}
+.radial-bars .radial-bar svg{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(-90deg);
+    width: 120px;
+    height: 160px;
+}
+.radial-bars .radial-bar .progress-bar{
+    stroke-width: 10;
+    stroke: black;
+    fill: transparent;
+    stroke-dasharray: 502;
+    stroke-dashoffset: 502;
+    stroke-linecap: round;
+    animation: animate-bar 1s linear forwards;
+
+}
+@keyframes animate-bar{
+    100%{
+        stroke-dashoffset: -1;
+    }
+}                 
+.path{
+    stroke-width: 10;
+    stroke: #0ef;
+    fill: transparent;
+    stroke-dasharray: 502;
+    stroke-dashoffset: 502;
+    stroke-linecap: round;
+}
+
+.path-1{ animation: animate-path1 1s 1s linear forwards;}
+.path-2{ animation: animate-path1 1s 1s linear forwards;}
+.path-3{ animation: animate-path1 1s 1s linear forwards;}
+.path-4{ animation: animate-path1 1s 1s linear forwards;}
+
+
+@keyframes animate-path1{
+    100%{
+        stroke-dashoffset: 50;
+    }
+}
+
+@keyframes animate-path12{
+    100%{
+        stroke-dashoffset: 175;
+    }
+}
+
+@keyframes animate-path1{
+    100%{
+        stroke-dashoffset: 125;
+    }
+}
+
+@keyframes animate-path1{
+    100%{
+        stroke-dashoffset: 75;
+    }
+}
+
+.radial-bar .percentage{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 17px;
+    font-weight: 500;
+    animation: showText 0.5 1s linear forwards;
+    opacity: 0;
+}
+.progress-bar .text{
+    width: 100%;
+    position: absolute;
+    text-align: center;
+    left: 50%;
+    bottom: -5px;
+    transform: translateX(-50%);
+    font-size: 17px;
+    font-weight: 500;
+    animation:  showText 0.5s 1s linear forwards;
+    opacity: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Responsive Adjustments for Tablets (max-width: 1024px) */
+@media (max-width: 1024px) {
+    .container1 {
+      width: 85%;
+      padding: 40px 20px;
+    }
+  
+    .sub-title {
+      font-size: 45px; /* Adjust for readability */
+      padding: 20px 0 40px;
+    }
+  
+    .heading {
+      font-size: 22px; /* Adjust font size */
+      margin-bottom: 40px;
+    }
+  
+    .bar {
+      font-size: 18px;
+      margin-bottom: 25px;
+    }
+  
+    .radial-bars .radial-bar {
+      width: 48%; /* Two bars per row */
+      height: 150px;
+    }
+  
+    .radial-bars .radial-bar svg {
+      width: 110px;
+      height: 140px;
+    }
+  }
+  
+  /* Responsive Adjustments for Mobile Devices (max-width: 768px) */
+  @media (max-width: 768px) {
+    .container1 {
+      width: 95%;
+      padding: 30px 15px;
+    }
+  
+    .sub-title {
+      font-size: 35px;
+      padding: 15px 0 30px;
+    }
+  
+    .heading {
+      font-size: 20px;
+      margin-bottom: 30px;
+    }
+  
+    .bar {
+      font-size: 16px;
+      margin-bottom: 20px;
+    }
+  
+    .radial-bars {
+      justify-content: center; /* Center radial bars */
+      flex-wrap: wrap; /* Wrap bars to fit screen */
+    }
+  
+    .radial-bars .radial-bar {
+      width: 90%; /* Single column layout */
+      height: 140px;
+      margin-bottom: 40px;
+    }
+  
+    .radial-bars .radial-bar svg {
+      width: 90px;
+      height: 120px;
+    }
+  
+    .radial-bar .percentage {
+      font-size: 14px; /* Adjust text size */
+    }
+  
+    .progress-bar .text {
+      font-size: 14px;
+    }
+  }
+  
+  /* Responsive Adjustments for Very Small Devices (max-width: 480px) */
+  @media (max-width: 480px) {
+    .sub-title {
+      font-size: 28px; /* Reduce title size */
+      padding: 10px 0 20px;
+    }
+  
+    .container1 {
+      padding: 20px 10px;
+    }
+  
+    .bar {
+      font-size: 14px;
+      margin-bottom: 15px;
+    }
+  
+    .radial-bars {
+      flex-direction: column; /* Stack radial bars vertically */
+      align-items: center;
+    }
+  
+    .radial-bars .radial-bar {
+      width: 100%; /* Full width for each bar */
+      height: 120px;
+      margin-bottom: 20px;
+      
+    }
+  
+    .radial-bars .radial-bar svg {
+      width: 80px;
+      height: 100px;
+    }
+  
+    .radial-bar .percentage {
+      font-size: 12px;
+    }
+  
+    .progress-bar .text {
+      font-size: 12px;
+    }
+  }
+  
+  /* Responsive Adjustments for Extra Small Devices (max-width: 360px) */
+  @media (max-width: 360px) {
+    .sub-title {
+      font-size: 24px; /* Further reduce title size */
+      padding: 5px 0 15px;
+    }
+  
+    .container1 {
+      padding: 15px 5px;
+    }
+  
+    .bar {
+      font-size: 12px;
+      margin-bottom: 10px;
+    }
+  
+    .radial-bars .radial-bar {
+      width: 100%;
+      height: 100px;
+    }
+  
+    .radial-bars .radial-bar svg {
+      width: 70px;
+      height: 90px;
+    }
+  
+    .radial-bar .percentage {
+      font-size: 10px;
+    }
+  
+    .progress-bar .text {
+      font-size: 10px;
+    }
+  }
+  

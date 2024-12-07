@@ -1,0 +1,116 @@
+/* Main Text Styling */
+.main-text {
+    text-align: center;
+    margin-bottom: 40px; /* Add spacing below the header */
+}
+
+.main-text h2 {
+    font-size: 60px;
+    line-height: 1;
+}
+
+.main-text h2 span {
+    color: #0ef;
+}
+
+/* Portfolio Container */
+.portfolio {
+    width: 100%;
+    padding: 15px;
+    box-sizing: border-box;
+    background-color: #235171; /* Optional: Background color for better contrast */
+}
+
+/* Portfolio Grid */
+.portfolio-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); /* Responsive grid */
+    gap: 20px; /* Space between items */
+    padding: 2px;
+    justify-content: center; /* Center the grid */
+    max-width: 1200px; /* Restrict max-width for alignment */
+    margin: 0 auto; /* Center align grid container */
+    margin-bottom: 50px;
+}
+
+/* Individual Project Rows */
+.row {
+    position: relative;
+    overflow: hidden;
+    border-radius: 8px;
+    cursor: pointer;
+    background: #000; /* Background color if image fails to load */
+    width: 100%;
+    transition: all 0.3s ease-in-out;
+}
+
+.row img {
+    width: 100%;
+    border-radius: 8px;
+    display: block;
+    transition: transform 0.5s ease;
+}
+
+/* Hover Overlay */
+.layer {
+    width: 100%;
+    height: 0;
+    background: linear-gradient(rgba(0,0,0,0.1), #0ef); /* Semi-transparent overlay */
+    position: absolute;
+    border-radius: 8px;
+    left: 0;
+    bottom: 0;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 0 40px;
+    transition: height 0.5s ease;
+}
+
+.layer h5 {
+    color: #0ef;
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+.layer p {
+    color: #fff;
+    font-size: 1rem;
+    line-height: 1.8;
+}
+
+.layer i {
+    color: #0ef;
+    margin-top: 20px;
+    font-size: 20px;
+    background: #fff;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    transition: transform 0.3s ease;
+}
+
+/* Hover Effects */
+.row:hover img {
+    transform: scale(1.1); /* Zoom in on hover */
+}
+
+.row:hover .layer {
+    height: 100%; /* Expand overlay on hover */
+}
+
+.layer:hover i {
+    transform: scale(1.2);
+}
+
+/* Link Styles */
+.project-link {
+    text-decoration: none;
+}

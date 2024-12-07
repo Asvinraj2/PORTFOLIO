@@ -1,0 +1,226 @@
+/* Global Styling */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  color: #ededed;
+  background: #081b29;
+}
+
+/* Header Styling */
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 20px 10%;
+  background: #051129;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 100;
+}
+
+/* Logo Styling */
+.logo {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: #fff;
+  font-weight: 600;
+  animation: slideRight 1s ease forwards;
+  opacity: 0; /* Initially hidden for animation */
+}
+
+.logo-img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.logo-text {
+  font-size: 25px;
+  color: #fff;
+  font-weight: 600;
+}
+
+/* Navbar Links Styling */
+.navbar {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  transition: transform 0.3s ease;
+}
+
+.navbar a {
+  font-size: 25px;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+  margin-left: 35px;
+  opacity: 0; /* Initially hidden for animation */
+  animation: slideTop 0.5s ease forwards;
+  animation-delay: calc(0.2s * var(--i));
+  transition: 0.3s;
+}
+
+.navbar a:hover {
+  color: #0ef;
+}
+
+/* New Navbar Styles */
+.navbar-links {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.navbar-links li {
+  display: inline;
+}
+
+.navbar-links a {
+  font-size: 16px;
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.navbar-links a:hover {
+  color: #0ef;
+}
+
+/* Hamburger Menu Styling */
+.hamburger {
+  display: none; /* Hidden by default */
+  font-size: 30px;
+  color: #fff;
+  cursor: pointer;
+}
+
+/* Navbar Active State (on mobile) */
+.navbar.active {
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  top: 80px;
+  left: 0;
+  width: 100%;
+  background: #051129;
+  padding: 20px 0;
+  z-index: 99;
+  transform: translateY(0); /* Slide down the menu */
+}
+
+.navbar.active a {
+  margin: 15px 0;
+  font-size: 20px;
+  text-align: center;
+  animation: none; /* Disable animations when active */
+  opacity: 1; /* Make the links visible when the menu is active */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Media Query for Responsiveness */
+@media (max-width: 768px) {
+  .hamburger {
+      display: block; /* Show hamburger icon on small screens */
+  }
+
+  .navbar {
+      position: fixed;
+      top: 80px;
+      left: 0;
+      width: 100%;
+      flex-direction: column;
+      background: #051129;
+      transform: translateY(-200%);
+      transition: transform 0.5s ease;
+  }
+
+  .navbar a {
+      margin: 15px 0;
+      text-align: center;
+      max-width: 10px;
+  }
+
+  .navbar.active {
+      transform: translateY(1); /* Slide down the menu */
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Smooth Scroll Behavior */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Keyframes for Animations */
+@keyframes slideRight {
+  0% {
+      transform: translateX(-100px);
+      opacity: 0;
+  }
+  100% {
+      transform: translateX(0px);
+      opacity: 1;
+  }
+}
+
+@keyframes slideTop {
+  0% {
+      transform: translateY(100px);
+      opacity: 0;
+  }
+  100% {
+      transform: translateY(0px);
+      opacity: 1;
+  }
+}
