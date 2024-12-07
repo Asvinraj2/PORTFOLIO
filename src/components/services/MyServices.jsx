@@ -35,8 +35,6 @@ const MyServices = () => {
             <a href='#' className='read'>Learn More</a>
           </div>
 
-
-
           <div>
             <i className='bx bxl-apple' style={{ color: '#00eeff' }}></i>
             <h2>UI/UX Designer</h2>
@@ -49,8 +47,6 @@ const MyServices = () => {
             </p>
             <a href='#' className='read'>Learn More</a>
           </div>
-
-
         </div>
       </div> 
       </div>

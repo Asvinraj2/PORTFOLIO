@@ -9,16 +9,12 @@ const MyProjects = () => {
   return (
     <section>
       <div className="portfolio" id="project">
-        {/* Main Header */}
         <div className="main-text">
           <h2>
             Latest <span>Projects</span>
           </h2>
         </div>
-
-        {/* Project Grid */}
         <div className="portfolio-content">
-          {/* Project 1 */}
           <a href="https://github.com/Asvinraj2" className="project-link" aria-label="View Project 1">
             <div className="row">
               <img src={img1} alt="project image1" />
@@ -29,8 +25,6 @@ const MyProjects = () => {
               </div>
             </div>
           </a>
-
-          {/* Project 2 */}
           <a href="https://github.com/Asvinraj2" className="project-link" aria-label="View Project 2">
             <div className="row">
               <img src={img2} alt="project image2" />
@@ -41,8 +35,6 @@ const MyProjects = () => {
               </div>
             </div>
           </a>
-
-          {/* Project 3 */}
           <a href="https://github.com/Asvinraj2" className="project-link" aria-label="View Project 3">
             <div className="row">
               <img src={img3} alt="project image3" />

@@ -14,7 +14,6 @@ const Home = () => {
           loop: true,
         });
     
-        // Cleanup on unmount
         return () => {
           typed.destroy();
         };

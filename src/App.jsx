@@ -47,8 +47,3 @@ function App() {
 }
 
 export default App
-
-
-
-
-{/* <div>ASWIN Name = {import.meta.env.VITE_EXAMPLE}</div> */}
