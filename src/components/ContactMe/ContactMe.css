@@ -121,78 +121,76 @@
     transform: translateY(-3px);
 }
 
-/* Media Queries for Responsiveness */
 @media (max-width: 768px) {
     .contact {
         margin-top: 50px;
-        grid-template-columns: 1fr; /* Stack the columns */
+        grid-template-columns: 1fr;
         gap: 2rem;
-        padding: 30px 15px; /* Adjust padding for small screens */
+        padding: 30px 15px; 
     }
 
     .contact-text h2 {
-        font-size: 40px; /* Resize title for smaller screens */
+        font-size: 40px; 
     }
 
     .contact-text h4 {
-        font-size: 18px; /* Resize subheading */
+        font-size: 18px; 
     }
 
     .contact-text p {
-        font-size: 16px; /* Resize paragraph text */
+        font-size: 16px; 
         text-align: justify;
     }
 
     .contact-list li {
-        font-size: 16px; /* Resize list items */
+        font-size: 16px; 
     }
 
     .contact-form form input,
     .contact-form form textarea {
-        padding: 12px; /* Reduce padding in inputs/textarea */
-        font-size: 14px; /* Adjust font size */
+        padding: 12px; 
+        font-size: 14px; 
     }
 
     .contact-form form .send {
-        font-size: 16px; /* Adjust button size */
+        font-size: 16px; 
         padding: 12px;
     }
 
     .contact-icon a {
         width: 40px;
         height: 40px;
-        font-size: 20px; /* Resize social media icons */
-        margin: 0 5px; /* Adjust margin for smaller screens */
+        font-size: 20px; 
+        margin: 0 5px; 
     }
 }
 
-/* For smaller screens (mobile) */
 @media (max-width: 480px) {
     .contact-text h2 {
-        font-size: 30px; /* Further reduce title size */
+        font-size: 30px; 
     }
 
     .contact-text h4 {
-        font-size: 16px; /* Smaller subheading */
+        font-size: 16px; 
     }
 
     .contact-text p {
-        font-size: 14px; /* Smaller paragraph text */
+        font-size: 14px; 
         text-align: justify;
     }
 
     .contact-form form input,
     .contact-form form textarea {
-        font-size: 14px; /* Ensure form text fits well */
+        font-size: 14px; 
     }
 
     .contact-form form .send {
-        font-size: 16px; /* Button adjustment */
+        font-size: 16px; 
     }
 
     .contact-icon a {
         width: 35px;
         height: 35px;
-        font-size: 18px; /* Adjust social icons */
+        font-size: 18px; 
     }
 }
