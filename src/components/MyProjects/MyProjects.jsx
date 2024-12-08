@@ -19,8 +19,8 @@ const MyProjects = () => {
             <div className="row">
               <img src={img1} alt="project image1" />
               <div className="layer">
-                <h5>UI/UX DESIGN</h5>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                <h5>E-commerce Website</h5>
+                <p>Built a full-stack e-commerce platform with product listings, user authentication, and payment integration.</p>
                 <i className="bx bx-link-external"></i>
               </div>
             </div>
@@ -29,18 +29,18 @@ const MyProjects = () => {
             <div className="row">
               <img src={img2} alt="project image2" />
               <div className="layer">
-                <h5>Web Development</h5>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                <h5>Chat Application (Back-End)</h5>
+                <p>Developed a scalable back-end for real-time chat with WebSocket and secure authentication.</p>
                 <i className="bx bx-link-external"></i>
               </div>
             </div>
           </a>
-          <a href="https://github.com/Asvinraj2" className="project-link" aria-label="View Project 3">
+          <a href="https://github.com/Asvinraj2/PORTFOLIO" className="project-link" aria-label="View Project 3">
             <div className="row">
               <img src={img3} alt="project image3" />
               <div className="layer">
-                <h5>Graphic Design</h5>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                <h5>Portfolio</h5>
+                <p>Designed a responsive portfolio to showcase skills and projects using modern front-end tools.</p>
                 <i className="bx bx-link-external"></i>
               </div>
             </div>
