@@ -32,7 +32,7 @@ const Home = () => {
             <a href="https://www.instagram.com/aswin_unofficial_?igsh=N2pxdXhvOWVzZmd0" target='_blank'> <i class='bx bxl-instagram'></i></a>
             <a href="#" style={{ "--i": 7 }}> <i class='bx bxl-youtube'></i></a>
             <a href="https://x.com/Aswin_soundaraj?t=cuDG8ZwiA3TEsmx0g_lsBQ&s=08" target='_blank' style={{ "--i": 8 }}> <i class='bx bxl-twitter'></i></a>
-            <a href="https://wa.me/917695997982?text=Hello%2C%20I%20came%20across%20your%20profile%20and%20found%20it%20impressive.%20I%20would%20love%20to%20connect%20and%20discuss%20further%21" target="_blank" style="--i: 9;">
+            <a href="https://wa.me/917695997982?text=Hello%2C%20I%20came%20across%20your%20profile%20and%20found%20it%20impressive.%20I%20would%20love%20to%20connect%20and%20discuss%20further%21" target="_blank" style={{ "--i": 9 }>
     <i class='bx bxl-whatsapp'></i>
 </a>
             <a href="https://www.linkedin.com/in/aswinraj-s-264395264" target='_blank' style={{ "--i": 10 }}> <i class='bx bxl-linkedin'></i></a>
