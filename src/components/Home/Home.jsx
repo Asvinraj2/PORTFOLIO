@@ -41,7 +41,7 @@ const Home = () => {
             <a href="https://www.linkedin.com/in/aswinraj-s-264395264" target='_blank' style={{ "--i": 10 }}> <i class='bx bxl-linkedin'></i></a>
           </div>
           <a href='#about' className="btn-box">More about Me</a>
-          <a href="/Aswinraj_Resume.pdf" id="down" className="btn-box download-btn" download>
+          <a href="/Aswinraj_Resume2.pdf" id="down" className="btn-box download-btn" download>
     Download CV
 </a>
 
